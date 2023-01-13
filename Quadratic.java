@@ -8,9 +8,6 @@ public class Quadratic {
         if(args.length != 3){
             System.out.println("Not enough arguments were provided");
             
-        } else if(b == 0 && c > 0){
-            System.out.println("No solutions");
-
         } else if(a == 0){
             System.out.println("x = " + (c * -1)/b);
 
@@ -19,6 +16,9 @@ public class Quadratic {
             int bsq = (b*b); 
             int  fourac = (4*a*c);
             int twoa = (2*a);
+            if (bsq - fourac < 0){
+                System.out.println("No solutions");
+            }
             double sqrt = Math.sqrt(bsq-fourac);
             
             double solution1 = ((negb + sqrt) / twoa);
