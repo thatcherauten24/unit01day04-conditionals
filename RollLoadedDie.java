@@ -1,3 +1,4 @@
+// good
 public class RollLoadedDie {
     public static void main(String[] args) {
         double rn = Math.random();
