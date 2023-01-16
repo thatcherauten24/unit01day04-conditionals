@@ -1,3 +1,4 @@
+// good
 public class Quadratic {
     public static void main(String[] args) {
         
@@ -12,6 +13,8 @@ public class Quadratic {
             System.out.println("x = " + (c * -1)/b);
 
         } else {
+            // I'd probably just have one variable here, for the discriminant:
+            // int disc = b*b - 4*a*c
             int negb = (b*-1);  
             int bsq = (b*b); 
             int  fourac = (4*a*c);
